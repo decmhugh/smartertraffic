@@ -1,0 +1,389 @@
+!SESSION 2014-09-10 09:38:28.767 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 2 2014-09-10 09:38:43.574
+!MESSAGE Invalid preference category path: com.worklight.studio.plugin.preferences.Worklight (bundle: com.ibm.imp.tools.server, page: com.ibm.imp.tools.server.preferences.PublishPreferencePage)
+
+!ENTRY org.eclipse.mylyn.tasks.core 1 0 2014-09-10 09:38:50.679
+!MESSAGE Migrating task repository credentials from keyring.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-10 09:38:51.122
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-10 09:38:51.123
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\IBM_ADMIN'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2014-09-10 09:39:27.071
+!MESSAGE An error occurred while uninstalling
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:39:27.071
+!MESSAGE session context was:(profile=epp.package.jee, phase=org.eclipse.equinox.internal.p2.engine.phases.Uninstall, operand=[R]com.worklight.studio.plugin 6.2.0.00-20140701-1500 --> null, action=org.eclipse.equinox.internal.p2.engine.MissingAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:39:27.071
+!MESSAGE No action found for: com.worklight.studio.plugin.Clean.
+!STACK 0
+java.lang.IllegalArgumentException: No action found for: com.worklight.studio.plugin.Clean.
+	at org.eclipse.equinox.internal.p2.engine.MissingAction.execute(MissingAction.java:42)
+	at org.eclipse.equinox.internal.p2.engine.Phase.mainPerform(Phase.java:183)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:95)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2014-09-10 09:41:01.562
+!MESSAGE An error occurred while uninstalling
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:41:01.562
+!MESSAGE session context was:(profile=epp.package.jee, phase=org.eclipse.equinox.internal.p2.engine.phases.Uninstall, operand=[R]com.worklight.studio.plugin 6.2.0.00-20140701-1500 --> null, action=org.eclipse.equinox.internal.p2.engine.MissingAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:41:01.562
+!MESSAGE No action found for: com.worklight.studio.plugin.Clean.
+!STACK 0
+java.lang.IllegalArgumentException: No action found for: com.worklight.studio.plugin.Clean.
+	at org.eclipse.equinox.internal.p2.engine.MissingAction.execute(MissingAction.java:42)
+	at org.eclipse.equinox.internal.p2.engine.Phase.mainPerform(Phase.java:183)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:95)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2014-09-10 09:46:10.891
+!MESSAGE An error occurred while uninstalling
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:46:10.891
+!MESSAGE session context was:(profile=epp.package.jee, phase=org.eclipse.equinox.internal.p2.engine.phases.Uninstall, operand=[R]com.worklight.studio.plugin 6.2.0.00-20140701-1500 --> null, action=org.eclipse.equinox.internal.p2.engine.MissingAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:46:10.891
+!MESSAGE No action found for: com.worklight.studio.plugin.Clean.
+!STACK 0
+java.lang.IllegalArgumentException: No action found for: com.worklight.studio.plugin.Clean.
+	at org.eclipse.equinox.internal.p2.engine.MissingAction.execute(MissingAction.java:42)
+	at org.eclipse.equinox.internal.p2.engine.Phase.mainPerform(Phase.java:183)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:95)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-09-10 09:47:05.890 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2014-09-10 09:47:11.019
+!MESSAGE An error occurred while uninstalling
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:47:11.019
+!MESSAGE session context was:(profile=epp.package.jee, phase=org.eclipse.equinox.internal.p2.engine.phases.Uninstall, operand=[R]com.worklight.studio.plugin 6.2.0.00-20140701-1500 --> null, action=org.eclipse.equinox.internal.p2.engine.MissingAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:47:11.019
+!MESSAGE No action found for: com.worklight.studio.plugin.Clean.
+!STACK 0
+java.lang.IllegalArgumentException: No action found for: com.worklight.studio.plugin.Clean.
+	at org.eclipse.equinox.internal.p2.engine.MissingAction.execute(MissingAction.java:42)
+	at org.eclipse.equinox.internal.p2.engine.Phase.mainPerform(Phase.java:183)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:95)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.executePlan(ProfileSynchronizer.java:805)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.performAddRemove(ProfileSynchronizer.java:202)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.synchronize(ProfileSynchronizer.java:141)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.synchronize(Activator.java:468)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:176)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-10 09:47:11.091
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.dojo.feature_6.1.0.01-20140427-1450
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-10 09:47:11.092
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.dojo.feature_6.2.0.00-20140701-1500
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-10 09:47:11.092
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.feature_6.1.0.01-20140427-1450
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-10 09:47:11.092
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.feature_6.2.0.00-20140701-1500
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-10 09:47:11.093
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.rpe.feature_1.0.200.v20140427_1315
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-10 09:47:11.093
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.rpe.feature_1.0.200.v20140630_0749
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-10 09:47:11.094
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.tools.feature_6.1.0.01-20140427-1450
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-10 09:47:11.353
+!MESSAGE Unable to access file "plugins/org.eclipse.cdt.codan.ui.cxx_3.2.0.201402142303.jar!META-INF/MANIFEST.MF".
+
+!ENTRY org.eclipse.ui 2 2 2014-09-10 09:47:23.591
+!MESSAGE Invalid preference category path: com.worklight.studio.plugin.preferences.Worklight (bundle: com.ibm.imp.tools.server, page: com.ibm.imp.tools.server.preferences.PublishPreferencePage)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-10 09:47:24.460
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-10 09:47:24.460
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\IBM_ADMIN'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2014-09-10 09:47:52.596
+!MESSAGE An error occurred while uninstalling
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:47:52.596
+!MESSAGE session context was:(profile=epp.package.jee, phase=org.eclipse.equinox.internal.p2.engine.phases.Uninstall, operand=[R]com.worklight.studio.plugin 6.2.0.00-20140701-1500 --> null, action=org.eclipse.equinox.internal.p2.engine.MissingAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:47:52.596
+!MESSAGE No action found for: com.worklight.studio.plugin.Clean.
+!STACK 0
+java.lang.IllegalArgumentException: No action found for: com.worklight.studio.plugin.Clean.
+	at org.eclipse.equinox.internal.p2.engine.MissingAction.execute(MissingAction.java:42)
+	at org.eclipse.equinox.internal.p2.engine.Phase.mainPerform(Phase.java:183)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:95)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2014-09-10 09:50:48.307
+!MESSAGE An error occurred while uninstalling
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:50:48.307
+!MESSAGE session context was:(profile=epp.package.jee, phase=org.eclipse.equinox.internal.p2.engine.phases.Uninstall, operand=[R]com.worklight.studio.plugin 6.2.0.00-20140701-1500 --> null, action=org.eclipse.equinox.internal.p2.engine.MissingAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:50:48.307
+!MESSAGE No action found for: com.worklight.studio.plugin.Clean.
+!STACK 0
+java.lang.IllegalArgumentException: No action found for: com.worklight.studio.plugin.Clean.
+	at org.eclipse.equinox.internal.p2.engine.MissingAction.execute(MissingAction.java:42)
+	at org.eclipse.equinox.internal.p2.engine.Phase.mainPerform(Phase.java:183)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:95)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2014-09-10 09:56:35.139
+!MESSAGE An error occurred while uninstalling
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:56:35.139
+!MESSAGE session context was:(profile=epp.package.jee, phase=org.eclipse.equinox.internal.p2.engine.phases.Uninstall, operand=[R]com.worklight.studio.plugin 6.2.0.00-20140701-1500 --> [R]com.worklight.studio.plugin 6.2.0.00-20140904-1709, action=org.eclipse.equinox.internal.p2.engine.MissingAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-10 09:56:35.139
+!MESSAGE No action found for: com.worklight.studio.plugin.Clean.
+!STACK 0
+java.lang.IllegalArgumentException: No action found for: com.worklight.studio.plugin.Clean.
+	at org.eclipse.equinox.internal.p2.engine.MissingAction.execute(MissingAction.java:42)
+	at org.eclipse.equinox.internal.p2.engine.Phase.mainPerform(Phase.java:183)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:95)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-09-12 10:03:25.874 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2014-09-12 10:03:30.781
+!MESSAGE An error occurred while uninstalling
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-12 10:03:30.781
+!MESSAGE session context was:(profile=epp.package.jee, phase=org.eclipse.equinox.internal.p2.engine.phases.Uninstall, operand=[R]com.worklight.studio.plugin 6.2.0.00-20140701-1500 --> [R]com.worklight.studio.plugin 6.2.0.00-20140904-1709, action=org.eclipse.equinox.internal.p2.engine.MissingAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-12 10:03:30.781
+!MESSAGE No action found for: com.worklight.studio.plugin.Clean.
+!STACK 0
+java.lang.IllegalArgumentException: No action found for: com.worklight.studio.plugin.Clean.
+	at org.eclipse.equinox.internal.p2.engine.MissingAction.execute(MissingAction.java:42)
+	at org.eclipse.equinox.internal.p2.engine.Phase.mainPerform(Phase.java:183)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:95)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.executePlan(ProfileSynchronizer.java:805)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.performAddRemove(ProfileSynchronizer.java:202)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.synchronize(ProfileSynchronizer.java:141)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.synchronize(Activator.java:468)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:176)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui 2 2 2014-09-12 10:03:46.613
+!MESSAGE Invalid preference category path: com.worklight.studio.plugin.preferences.Worklight (bundle: com.ibm.imp.tools.server, page: com.ibm.imp.tools.server.preferences.PublishPreferencePage)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-12 10:03:48.831
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-12 10:03:48.832
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\IBM_ADMIN'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2014-09-12 10:04:12.669
+!MESSAGE An error occurred while uninstalling
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-12 10:04:12.669
+!MESSAGE session context was:(profile=epp.package.jee, phase=org.eclipse.equinox.internal.p2.engine.phases.Uninstall, operand=[R]com.worklight.studio.plugin 6.2.0.00-20140701-1500 --> null, action=org.eclipse.equinox.internal.p2.engine.MissingAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-12 10:04:12.669
+!MESSAGE No action found for: com.worklight.studio.plugin.Clean.
+!STACK 0
+java.lang.IllegalArgumentException: No action found for: com.worklight.studio.plugin.Clean.
+	at org.eclipse.equinox.internal.p2.engine.MissingAction.execute(MissingAction.java:42)
+	at org.eclipse.equinox.internal.p2.engine.Phase.mainPerform(Phase.java:183)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:95)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:174)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-09-15 10:27:07.997 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2014-09-15 10:27:14.652
+!MESSAGE An error occurred while uninstalling
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-15 10:27:14.652
+!MESSAGE session context was:(profile=epp.package.jee, phase=org.eclipse.equinox.internal.p2.engine.phases.Uninstall, operand=[R]com.worklight.studio.plugin 6.2.0.00-20140701-1500 --> null, action=org.eclipse.equinox.internal.p2.engine.MissingAction).
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2014-09-15 10:27:14.652
+!MESSAGE No action found for: com.worklight.studio.plugin.Clean.
+!STACK 0
+java.lang.IllegalArgumentException: No action found for: com.worklight.studio.plugin.Clean.
+	at org.eclipse.equinox.internal.p2.engine.MissingAction.execute(MissingAction.java:42)
+	at org.eclipse.equinox.internal.p2.engine.Phase.mainPerform(Phase.java:183)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:95)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.executePlan(ProfileSynchronizer.java:805)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.performAddRemove(ProfileSynchronizer.java:202)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.synchronize(ProfileSynchronizer.java:141)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.synchronize(Activator.java:468)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:176)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-15 10:27:15.167
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.dojo.feature_6.1.0.01-20140427-1450
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-15 10:27:15.168
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.dojo.feature_6.2.0.00-20140701-1500
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-15 10:27:15.204
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.feature_6.1.0.01-20140427-1450
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-15 10:27:15.204
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.feature_6.2.0.00-20140701-1500
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-15 10:27:15.220
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.rpe.feature_1.0.200.v20140427_1315
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-15 10:27:15.225
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.rpe.feature_1.0.200.v20140630_0749
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-15 10:27:15.292
+!MESSAGE Unable to find feature.xml in directory: C:\tools\eclipse\features\com.ibm.imp.tools.feature_6.1.0.01-20140427-1450
+
+!ENTRY org.eclipse.update.configurator 4 0 2014-09-15 10:27:27.828
+!MESSAGE Unable to access file "plugins/org.eclipse.cdt.codan.ui.cxx_3.2.0.201402142303.jar!META-INF/MANIFEST.MF".
+
+!ENTRY org.eclipse.ui 2 2 2014-09-15 10:47:41.812
+!MESSAGE Invalid preference category path: com.worklight.studio.plugin.preferences.Worklight (bundle: com.ibm.imp.tools.server, page: com.ibm.imp.tools.server.preferences.PublishPreferencePage)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-15 10:47:43.996
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-09-15 10:47:43.996
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\IBM_ADMIN'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

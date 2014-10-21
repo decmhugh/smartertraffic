@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Topic Clouds</title> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script src="http://d3js.org/d3.v2.min.js?2.10.0"></script>
+    <script type="text/javascript" src="d3.layout.cloud.js"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+
+		
+<script>
+  //http://127.0.0.1:8000/api/tweetcloud_aa/
+  
+  $( document ).ready(
+  		function() {
+  			$.getJSON( "/api/tweetcloud_aa", {})
+				.done(function( data ) {
+					result = []
+					this.min = 100000000
+					this.max = 0
+					for (d in data){
+						if (data[d] < this.min){
+							this.min = data[d]
+						}
+						if (data[d] > this.max){
+							this.max = data[d]
+						}
+					}
+					console.log("min>" + this.min)
+					console.log("max>" + this.max)
+					for (d in data){
+						
+						item = {text:d,size:(data[d]/this.max)*100}
+						console.log(item)
+						result.push(item);
+					}
+					
+					cloud(result)
+					})
+				//.success(function(data) { console.log(data);})
+				.error(function(error) { console.log(error); })
+    	}
+  );
+  var fill = d3.scale.category20();
+  var zz= ["Hello", "world", "normally", "you", "want", "more", "words", "than", "this"];
+  (zz).map(function(d) {
+        return {text: d, size: 10 + Math.random() * 90};
+      }
+      );
+  
+   
+  var cloud = function(data){
+  		console.log(zz)
+  		d3.layout.cloud().size([1500, 1500])
+			
+	      .words(data)
+	      .rotate(function() { return ~~(Math.random() * 2) * 90; })
+	      .font("Impact")
+	      .fontSize(function(d) { return d.size; })
+	      .on("end", draw)
+	      .start();
+	
+	  function draw(words) {
+	    d3.select("body").append("svg")
+	        .attr("width", 1800)
+	        .attr("height", 1800)
+	      .append("g")
+	        .attr("transform", "translate(300,300)")
+	      .selectAll("text")
+	        .data(words)
+	      .enter().append("text")
+	        .style("font-size", function(d) { return d.size + "px"; })
+	        .style("font-family", "Impact")
+	        .style("fill", function(d, i) { return fill(i); })
+	        .attr("text-anchor", "middle")
+	        .attr("transform", function(d) {
+	          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+	        })
+	        .text(function(d) { return d.text; });
+	  }
+  }
+</script>

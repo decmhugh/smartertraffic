@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+   <head>
+		<title>Smart City - Traffic</title>
+		<meta charset="utf-8" />
+		
+		<link type="text/css" rel="stylesheet" href="css/960/min/960.css" />
+		<link type="text/css" rel="stylesheet" href="css/960/min/960_16_col.css" />
+		<link type="text/css" rel="stylesheet" href="css/normalize/min/normalize.css" />
+		<link type="text/css" rel="stylesheet" href="css/prettify/min/prettify.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<script src="d3/lib/d3/d3.js"></script>
+		<script src="d3/d3.layout.cloud.js"></script>
+		<script type="text/javascript" src="js/modernizr-2.0.6/modernizr.min.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
+		<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/underscore-1.2.2/underscore.min.js"></script>
+		<script type="text/javascript" src="js/backbone-0.5.3/backbone.min.js"></script>
+		<script type="text/javascript" src="js/prettify/prettify.min.js"></script>
+		<script type="text/javascript" src="jquery/ui/jquery.timepicker.js"></script>
+		<script type="text/javascript" src="ui/jquery.ui.map.js"></script>
+		<script type="text/javascript" src="js/markerclustererplus-2.0.6/markerclusterer.min.js"></script>
+		<script type="text/javascript" src="ui/jquery.ui.map.services.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/bootstrap/bootstrap-select.js"></script>
+    	<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap-select.css">
+		<script type="text/javascript" src="js/smartcity.js"></script>
+		<script type="text/javascript" src="js/smartcity.clusters.js"></script>
+		<script type="text/javascript" src="js/smartcity.events.js"></script>
+		<script type="text/javascript" src="js/smartcity.functions.js"></script>
+		
+		
+
+		 
+    </head>
+    <body>
+		<header class="dark">
+			<div class="container_16">
+				<h1>Smart City Dublin</h1>
+			</div>
+		</header>
+		<div style="position: relative;right: 0px;width: 300px;float: right;">
+		<div id="ui-grid">
+				<span class="ui-block-1"></span>
+		</div>
+				<div id="word" style="position: relative;right: 0px;width: 300px;float: right;"> 
+			<script>
+  var fill = d3.scale.category20();
+  var zz= ["Smarter", "City", "management", "traffic", "planning", "incident", "flow"];
+  a = (zz).map(function(d) {
+        return {text: d, size: 10 + Math.random() * 90};
+      });
+  console.log(a)
+  d3.layout.cloud().size([300, 300])
+
+      .words((zz).map(function(d) {
+        return {text: d, size: 10 + Math.random() * 90};
+      }))
+      .rotate(function() { return ~~(Math.random() * 2) * 90; })
+      .font("Impact")
+      .fontSize(function(d) { return d.size; })
+      .on("end", draw)
+      .start();
+
+  function draw(words) {
+    d3.select("#word").append("svg")
+        .attr("width", 300)
+        .attr("height", 300)
+      .append("g")
+        .attr("transform", "translate(150,150)")
+      .selectAll("text")
+        .data(words)
+      .enter().append("text")
+        .style("font-size", function(d) { return d.size + "px"; })
+        .style("font-family", "Impact")
+        .style("fill", function(d, i) { return fill(i); })
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; });
+  }
+  
+</script>			
+		</div> 
+			</div>
+		
+		
+		
+		
+		<div class="container_left" style="float:left;display: block;width:250px;">
+			<span style="width:160px;display: block;">
+					Direction : <br/>
+					<input type="radio" name="bound" value="0" checked>Inbound<br>
+					<input type="radio" name="bound" value="1">Outbound<br>
+			</span>
+			<span class="container_left_z" style="display: block;">
+				<input type="text" id="datepicker" name="datepicker" value="2014/04/21">
+				<select  id="timepicker" name="timepicker">
+							<option>00:00</option>
+							<option>01:00</option>
+							<option>02:00</option>
+							<option>03:00</option>
+							<option>04:00</option>
+							<option>05:00</option>
+							<option>06:00</option>
+							<option>07:00</option>
+							<option>08:00</option>
+							<option>09:00</option>
+							<option>10:00</option>
+							<option>11:00</option>
+							<option >12:00</option>
+							<option>13:00</option>
+							<option>14:00</option>
+							<option>15:00</option>
+							<option>16:00</option>
+							<option>17:00</option>
+							<option>18:00</option>
+							<option>19:00</option>
+							<option selected>20:00</option>
+							<option>21:00</option>
+							<option>22:00</option>
+							<option>23:00</option>
+							
+						</select>
+				<span>
+				<button id="twitterShow" name="twitterShow">
+				    Show Twitter!
+				</button>
+				</span>
+				<p>
+				&nbsp;
+				</p>
+				<button id="twitterAnalyse" name="twitterShow">
+				    Analyses Twitter!
+				</button>
+				
+	
+			</span>
+			
+			<p>&nbsp;</p>
+			<span class="container_left_a" style="display: block;">
+				<button id="toggleButton">
+				    Prediction Models
+				</button>
+				
+			</span>
+			<span class="container_left_a" style="display: block;">
+			&nbsp;
+			</span>
+			<span class="container_left_a" style="display: block;">
+				<span id="slider" style="width:200px;float: left;"></span>
+			</span>
+			<span class="container_left_a" style="display: block;">
+			&nbsp;
+			</span>
+			<span class="container_left_a" style="display: block;">
+				<button id="heatMapOfData">
+				    Display Heat Map of 
+				</button>
+
+				 <select id="model">
+				  </select>
+			</span>
+			<span>&nbsp;</span>
+			<span class="container_left_corr" style="display: block;">
+				<button id="corrMapOfData">
+				    Correlation Map
+				</button>
+
+				 <select id="correlation_select">
+				  </select>
+			</span>
+			<span class="container_left_pred" style="display: block;">
+				<button id="predMapOfData">
+				    Algorithm Map
+				</button>
+
+				 <select id="pred_select">
+				  </select>
+			</span>
+			
+			<p>&nbsp;</p>
+			<span class="container_left_a" style="display: block;">
+		
+				<span class="std_button" style="width:10px;display: inline-block;background-color;">
+					Quantile <input type="text" style="width:30px;" name="obs_quantile_value" value="80"/>
+					Scale <input type="text" style="width:30px;" name="obs_quantile_range" value="500"/>
+				</span>
+				<br/><br/>
+				
+				<span style="width:160px;display: block;">
+					<button id="obs_std" title="Standard Deviation">STD All</button>
+				</span>
+				<span style="width:160px;display: block;">
+					<button id="obs_std_weekday" title="Weekend Standard Deviation">STD Weekday</button>
+				</span>
+				<span style="width:160px;display: block;">
+					<button id="obs_std_weekend" title="Weekend Standard Deviation">STD Weekend</button>
+				</span>
+				<span style="width:160px;display: block;">
+					<button id="obs_std_wd" title="Standard Deviation WeekDay">Quantile WD</button>
+				</span>
+				<span style="width:160px;display: block;">
+					<button id="obs_std_we" title="Standard Deviation WeekEnd">Quantile WE</button>
+				</span>
+				<span style="width:160px;display: block;">
+					<p>&nbsp;</p>
+				</span>
+				<span id="std_range" 
+					style="width:200px;display: block;background-color;">
+					
+					
+					<span id="std_range" 
+						style="width:160px;display: block;background-color;">
+						
+					</span>
+				</span>
+				<span id="std_range_txt" 
+						style="width:160px;display: block;background-color;">
+						<span id="std_range_space" 
+							style="width:5px;display: inline-block;background-color;">
+							&nbsp;
+						</span>
+						<span id="std_range_min" 
+							style="width:60px;display: inline-block;background-color;">
+							0
+						</span>
+						<span id="std_range_max" 
+							style="width:75px;display: inline-block;background-color;" align="right">
+							0
+						</span>
+					</span>
+				</span>
+				<span id="quant_range" 
+					style="width:200px;display: block;background-color;">
+					
+					
+					<span id="quant_range" 
+						style="width:160px;display: block;background-color;">
+						
+					</span>
+				</span>
+				<span id="quant_range_txt" 
+						style="width:160px;display: block;background-color;">
+						<span id="quant_range_space" 
+							style="width:5px;display: inline-block;background-color;">
+							&nbsp;
+						</span>
+						<span id="quant_range_min" 
+							style="width:60px;display: inline-block;background-color;">
+							0
+						</span>
+						<span id="quant_range_max" 
+							style="width:75px;display: inline-block;background-color;" align="right">
+							0
+						</span>
+					</span>
+				</span>
+				<span id="LinkName">
+				</span>
+		</div>
+		<div class="container_16" style="display: block;overflow: hidden;">
+			
+			<article class="grid_16">
+				<div class="item rounded dark">
+					<div id="map_canvas" class="map rounded"></div>
+				</div>
+			</article>
+		</div>
+		
+		
+		
+		
+	
+		<footer class="dark">
+			<div class="container_16">
+				<div class="grid_8">
+					<h2>&copy; declan.mchugh@gmail.com</h2>
+				</div>
+			</div>
+		</footer>
+    
+	</body>
+</html>
